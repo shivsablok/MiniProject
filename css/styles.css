@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@600&family=Poppins&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@1,300&display=swap');
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+
+.title {
+  font-family: 'Poppins', sans-serif;
+  color: #424242;
+  font-size: 2.4rem;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  height: 90vh;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+#logo {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  background-color: #424242;
+  height: 10vh;
+  align-items: center;
+
+
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  padding: 12px;
+}
+
+.service-btn {
+  color: white;
+  padding: 12px;
+}
+
+
+
+.nav-list {
+  list-style-type: none;
+  font-size: 1.2rem;
+  display: inline;
+  margin-right: 20px;
+  color: white;
+
+}
+
+.carousel-img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.btn {
+  border-radius: 7px;
+  background-color: #fd5564;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1.5;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.7;
+}
+
+#About {
+  display: flex;
+
+}
+
+.description {
+  text-align: center;
+  height: 100vh;
+
+
+
+}
+
+.flex-container {
+
+  flex: 1;
+}
+
+.photo {
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+
+  height: 100%;
+}
+
+.heading {
+  font-size: 4rem;
+  color: #808080;
+  font-family: 'Poppins', sans-serif;
+}
+
+.paragraph {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.8rem;
+  color: #6D5D6E;
+  line-height: 1.2;
+
+}
+
+.logo-img {
+  width: 8%;
+  height: 8%;
+  margin-right: 20px;
+}
+
+
+#services {
+  background-image: url("https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp");
+
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 50px;
+
+}
+
+
+
+
+li {
+  line-height: 1.5;
+  font-size: 1.2rem;
+
+
+}
+
+
+
+.card {
+  height: 70%;
+  width: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  ;
+  color: #F6F1F1;
+  border-radius: 1px;
+  position: relative;
+}
+
+.gradient {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, red, yellow);
+
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+
+.info {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 2rem;
+  margin-top: 3rem;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+}
+
+.card:hover .gradient {
+
+  opacity: 1;
+}
+
+.fontawesome {
+  margin-bottom: 50px;
+}
+
+#contact {
+  background-image: url("https://images.shiksha.com/mediadata/images/articles/1568193656phpmWI2xq.jpeg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  column-gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.sign-in {
+
+  flex: 1;
+}
+
+
+h2 {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  color: black;
+
+}
+
+.contact-item {
+  color: #F6F1F1;
+  line-height: 60px;
+  font-size: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  padding-left: 30px;
+
+}
+
+#text-area {
+  margin-top: 10px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  border: 0px;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+.inp-field {
+  width: 40%;
+  height: 7%;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+
+  margin-right: 10px;
+}
+
+
+.last-section {
+  background-color: #424242;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+nav #hamburger-menu {
+  color: white;
+  font-size: 1.8rem;
+  line-height: 65px;
+  float: right;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+
+}
+
+
+.a-nav.active,
+.a-nav:hover {
+  border: 1px solid white;
+  transition: 0.5s;
+
+}
+
+
+
+
+@media screen and (max-width:768px) {
+
+
+  nav ul {
+
+    position: fixed;
+    width: 80%;
+    height: 60%;
+    background-color: #424242;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    z-index: 1;
+    margin-top: 30px;
+    margin-left: 50px;
+
+
+
+
+
+
+  }
+
+  .nav-list {
+
+    display: block;
+    margin: auto 0%;
+    line-height: 60px;
+
+  }
+
+  ul li a {
+    font-size: 1.2rem;
+  }
+
+  nav #hamburger-menu {
+    display: block;
+  }
+
+  nav ul.show {
+    left: 0;
+  }
+
+
+  #services {
+    min-height: 1366px;
+    flex-direction: column;
+  }
+
+
+
+  #About {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .info {
+    padding-left: 15%;
+    padding-bottom: 12%;
+  }
+
+  #contact {
+    background-position: center;
+
+
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+
+  }
+
+  .inp-field {
+    width: 100%;
+    height: 7vh;
+    margin-bottom: 10px;
+  }
+
+  .btn-1 {
+    margin-left: 40%;
+  }
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+  .paragraph {
+
+    font-size: 1.38rem;
+
+  }
+
+  .info ul li {
+    font-size: 0.8rem;
+  }
+
+  .heading {
+
+    font-size: 3rem;
+
+  }
+
+  .btn-i {
+    height: 50px;
+    width: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10%;
+  }
+
+  .info h1 {
+    font-size: 1.1rem;
+    ;
+
+  }
+
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1300px) {
+
+  .info h1 {
+    font-size: 1.2rem;
+  }
+
+  .paragraph {
+
+    font-size: 1.5rem;
+
+  }
+
+  .info ul li {
+    font-size: 0.9rem;
+  }
+
+}
+
+
+/* Style the links inside the navigation bar */
+
+/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
