@@ -105,7 +105,6 @@
 
 /* Slideshow container */
 .slideshow-container {
-  width: 100%;
   position: relative;
   margin: auto;
   height: 90vh;
@@ -180,7 +179,6 @@ a {
 
 .description {
   text-align: center;
-  height: 100vh;
 
 
 
@@ -192,7 +190,7 @@ a {
 }
 
 .photo {
-  height: 100vh;
+  height: 400px;
 }
 
 .image {
@@ -202,16 +200,18 @@ a {
 }
 
 .heading {
-  font-size: 4rem;
+  font-size: 2.5rem;
   color: #808080;
   font-family: 'Poppins', sans-serif;
 }
 
 .paragraph {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
+  font-size: 1.25rem;
   color: #6D5D6E;
   line-height: 1.2;
+  text-align: justify;
+  margin: 5%;
 
 }
 
@@ -252,7 +252,6 @@ li {
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
   text-align: center;
-  ;
   color: #F6F1F1;
   border-radius: 1px;
   position: relative;
@@ -294,8 +293,9 @@ li {
   height: 100vh;
   display: flex;
   column-gap: 60px;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 5%;
 }
 
 
@@ -381,9 +381,11 @@ nav #hamburger-menu {
 
 
 
+@media only screen and (max-width: 768px) {
 
-@media screen and (max-width:768px) {
-
+  .brandimage {
+    display: none;
+  }
 
   nav ul {
 
@@ -397,6 +399,7 @@ nav #hamburger-menu {
     z-index: 1;
     margin-top: 30px;
     margin-left: 50px;
+    border-radius: 25px;
 
 
 
@@ -408,8 +411,8 @@ nav #hamburger-menu {
   .nav-list {
 
     display: block;
-    margin: auto 0%;
-    line-height: 60px;
+    margin: 20px 5%;
+    font-size: 2.5rem;
 
   }
 
@@ -425,11 +428,6 @@ nav #hamburger-menu {
     left: 0;
   }
 
-
-  #services {
-    min-height: 1366px;
-    flex-direction: column;
-  }
 
 
 
@@ -448,8 +446,8 @@ nav #hamburger-menu {
 
   #contact {
     background-position: center;
-
-
+    margin: auto 0%;
+    height: auto;
     flex-direction: column;
   }
 
@@ -468,63 +466,18 @@ nav #hamburger-menu {
     margin-left: 40%;
   }
 
-}
-
-
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
-  .paragraph {
-
-    font-size: 1.38rem;
-
-  }
-
-  .info ul li {
-    font-size: 0.8rem;
-  }
-
   .heading {
-
-    font-size: 3rem;
-
+    font-size: 2rem;
   }
 
-  .btn-i {
-    height: 50px;
-    width: 100%;
-    font-size: 0.9rem;
-    text-align: center;
-    padding: 10%;
+  .last-section {
+    flex-direction: column;
   }
 
-  .info h1 {
-    font-size: 1.1rem;
-    ;
-
-  }
-
-
-
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
-
-  .info h1 {
-    font-size: 1.2rem;
-  }
-
-  .paragraph {
-
-    font-size: 1.5rem;
-
-  }
-
-  .info ul li {
-    font-size: 0.9rem;
+  #services {
+    flex-direction: column;
+    min-height: 200vh;
+    column-gap: 50px;
   }
 
 }
-
-
-/* Style the links inside the navigation bar */
-
-/* The "responsive" class is added to the nav-bar with JavaScript when the user clicks on the icon. This class makes the nav-bar look good on small screens (display the links vertically instead of horizontally) */
