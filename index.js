@@ -33,9 +33,3 @@ function showSlides(n) {
 document.querySelector("#hamburger-menu").addEventListener("click", function () {
   document.querySelector(".myList").classList.toggle("show");
 });;
-const boxes = document.querySelectorAll(".nav-list");
-for (const box of boxes) {
-  box.addEventListener("click", function () {
-    document.querySelector(".myList").classList.toggle("show");
-  })
-}
