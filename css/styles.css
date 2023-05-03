@@ -379,7 +379,9 @@ nav #hamburger-menu {
 
 }
 
-
+.hideme {
+  display: none;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -478,6 +480,10 @@ nav #hamburger-menu {
     flex-direction: column;
     min-height: 200vh;
     column-gap: 50px;
+  }
+
+  .hideme {
+    display: inline;
   }
 
 }
