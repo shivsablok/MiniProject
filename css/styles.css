@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Hind:wght@600&family=Poppins&family=Roboto+Slab:wght@600&family=Roboto:ital,wght@1,300&display=swap');
-
-
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
 }
-
 
 /* Next & previous buttons */
 .prev,
@@ -90,11 +87,10 @@
   }
 }
 
-
 .title {
-  font-family: 'Poppins', sans-serif;
-  color: #424242;
-  font-size: 2.4rem;
+  font-family: 'Comic Sans MS', sans-serif;
+  color: #fdfbfb;
+  font-size: 1.5rem;
 }
 
 .subtitle {
@@ -122,10 +118,7 @@
   background-color: #424242;
   height: 10vh;
   align-items: center;
-
-
 }
-
 
 a {
   text-decoration: none;
@@ -138,23 +131,33 @@ a {
   padding: 12px;
 }
 
-
-
 .nav-list {
   list-style-type: none;
   font-size: 1.2rem;
   display: inline;
   margin-right: 20px;
   color: white;
-
 }
 
 .carousel-img {
   height: 100%;
   width: 100%;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 150px;
 }
 
-
+.bt {
+  border-radius: 7px;
+  background-color: rgb(0, 40, 9);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 1.5;
+  transition: 0.3s;
+}
 .btn {
   border-radius: 7px;
   background-color: #fd5564;
@@ -174,18 +177,13 @@ a {
 
 #About {
   display: flex;
-
 }
 
 .description {
   text-align: center;
-
-
-
 }
 
 .flex-container {
-
   flex: 1;
 }
 
@@ -195,7 +193,6 @@ a {
 
 .image {
   width: 100%;
-
   height: 100%;
 }
 
@@ -212,7 +209,6 @@ a {
   line-height: 1.2;
   text-align: justify;
   margin: 5%;
-
 }
 
 .logo-img {
@@ -221,30 +217,20 @@ a {
   margin-right: 20px;
 }
 
-
 #services {
   background-image: url("https://www.pangolinphoto.com/wp-content/uploads/2020/05/Guest-with-camera-gear-on-safari-in-Botswana-Pangolin-Photo-Safaris-scaled.webp");
-
   background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 50px;
-
 }
-
-
-
 
 li {
   line-height: 1.5;
   font-size: 1.2rem;
-
-
 }
-
-
 
 .card {
   height: 70%;
@@ -262,11 +248,9 @@ li {
   height: 100%;
   width: 100%;
   background-image: linear-gradient(to bottom right, red, yellow);
-
   opacity: 0;
   transition: opacity 2s;
 }
-
 
 .info {
   position: absolute;
@@ -279,7 +263,6 @@ li {
 }
 
 .card:hover .gradient {
-
   opacity: 1;
 }
 
@@ -298,19 +281,15 @@ li {
   padding: 5%;
 }
 
-
 .sign-in {
-
   flex: 1;
 }
-
 
 h2 {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   color: black;
-
 }
 
 .contact-item {
@@ -319,7 +298,6 @@ h2 {
   font-size: 1.5rem;
   font-family: 'Poppins', sans-serif;
   padding-left: 30px;
-
 }
 
 #text-area {
@@ -330,10 +308,7 @@ h2 {
   padding: 10px;
   border: 0px;
   font-family: 'Poppins', sans-serif;
-
 }
-
-
 
 .inp-field {
   width: 40%;
@@ -342,10 +317,8 @@ h2 {
   border-radius: 10px;
   padding: 10px;
   font-family: 'Poppins', sans-serif;
-
   margin-right: 10px;
 }
-
 
 .last-section {
   background-color: #424242;
@@ -358,8 +331,6 @@ h2 {
   font-family: 'Poppins', sans-serif;
 }
 
-
-
 nav #hamburger-menu {
   color: white;
   font-size: 1.8rem;
@@ -368,15 +339,12 @@ nav #hamburger-menu {
   margin-right: 40px;
   cursor: pointer;
   display: none;
-
 }
-
 
 .a-nav.active,
 .a-nav:hover {
   border: 1px solid white;
   transition: 0.5s;
-
 }
 
 .hideme {
@@ -384,13 +352,11 @@ nav #hamburger-menu {
 }
 
 @media only screen and (max-width: 768px) {
-
   .brandimage {
     display: none;
   }
 
   nav ul {
-
     position: fixed;
     width: 80%;
     height: 60%;
@@ -402,20 +368,12 @@ nav #hamburger-menu {
     margin-top: 30px;
     margin-left: 50px;
     border-radius: 25px;
-
-
-
-
-
-
   }
 
   .nav-list {
-
     display: block;
     margin: 20px 5%;
     font-size: 2.5rem;
-
   }
 
   ul li a {
@@ -430,16 +388,9 @@ nav #hamburger-menu {
     left: 0;
   }
 
-
-
-
   #About {
-
     flex-direction: column;
-
   }
-
-
 
   .info {
     padding-left: 15%;
@@ -455,7 +406,6 @@ nav #hamburger-menu {
 
   .card {
     width: 100%;
-
   }
 
   .inp-field {
@@ -485,5 +435,4 @@ nav #hamburger-menu {
   .hideme {
     display: inline;
   }
-
 }
