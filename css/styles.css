@@ -186,7 +186,8 @@ a {
 .flex-container {
   flex: 1;
   margin-top: 20px;
-  margin-right: 15px;
+  margin-right: 20px;
+  margin-left: 20px;
   
 }
 
